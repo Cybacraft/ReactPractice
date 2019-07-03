@@ -41,6 +41,10 @@ class IndecisionApp extends React.Component {
   }
   
   class Options extends Component {
+    constructor(props){
+      super(props);
+      this.handleRemoveAll=this.handleRemoveAll.bind(this);
+    }
     handleRemoveAll(){
       alert('handleRemoveAll')
     }

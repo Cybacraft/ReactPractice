@@ -2,11 +2,12 @@ import React, {Component} from 'react'
 import B from './B'
 
 
+
 class A extends Component {
     constructor(){
         super()
         this.state = {
-            cars: ['g','h','l']
+            cars: ['BMW','Benz','Honda']
         }
     }
     render(){
@@ -18,6 +19,7 @@ class A extends Component {
             <h1>Welcome to my A </h1> 
             <Footer fool ={title}/>
             <DesignFooter title = {title}/>
+            <B name='dennis'/>
             </div>
 
         )
@@ -49,7 +51,7 @@ sayhello(work){
             <div>{this.props.coolex.map((item, i)=> {
                 return <p key ={i}>{item}</p>
             })}</div> 
-            <B/>
+            <B />
             </div>
 
         )
